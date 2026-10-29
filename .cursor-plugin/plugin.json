@@ -1,0 +1,15 @@
+{
+  "name": "offrouter",
+  "displayName": "OffRouter",
+  "version": "0.1.0",
+  "description": "Private inference for your agent: 18 open models, each running in a GPU enclave. Prompts are encrypted on your machine to a key the enclave proves it holds, and every answer comes back with a signed receipt.",
+  "author": {
+    "name": "OffRouter",
+    "url": "https://offrouter.org"
+  },
+  "homepage": "https://offrouter.org",
+  "repository": "https://github.com/offrouter/cursor-plugin",
+  "license": "MIT",
+  "keywords": ["mcp", "private-inference", "tee", "confidential-computing", "end-to-end-encryption", "llm", "privacy", "x402", "onchain-agents"],
+  "logo": "assets/logo.svg"
+}

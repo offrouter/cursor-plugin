@@ -1,0 +1,14 @@
+---
+description: When to send work to OffRouter's private models instead of answering directly, and how to report what they cost
+alwaysApply: false
+---
+
+# Using OffRouter
+
+OffRouter runs open models inside GPU enclaves. The `offrouter` MCP server encrypts each prompt on this machine to a key the enclave proves it holds, so nothing between here and the model can read it.
+
+- Reach for OffRouter when the user asks for a private model, a second opinion from another model, or to keep code, keys, contracts or business details away from third parties.
+- Never paste secrets (private keys, seed phrases, API keys) into a prompt, private or not. Redact them first.
+- Before the first private call in a session, or when the user asks whether it is really private, run `verify_enclave` and say what it checked.
+- After each `ask` or `compare`, give the model, what it cost and the receipt link it returned.
+- With no key set the server uses the free demo: one model and a few calls a day. If the user hits that limit, point them to the README of this plugin for adding a key.

@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "offrouter": {
+      "command": "npx",
+      "args": ["-y", "github:offrouter/mcp"]
+    }
+  }
+}
