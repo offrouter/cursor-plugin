@@ -1,8 +1,10 @@
 {
   "mcpServers": {
     "offrouter": {
-      "command": "npx",
-      "args": ["-y", "github:offrouter/mcp"]
+      "url": "https://offrouter.org/mcp",
+      "headers": {
+        "Authorization": "Bearer ${env:OFFROUTER_API_KEY}"
+      }
     }
   }
 }
